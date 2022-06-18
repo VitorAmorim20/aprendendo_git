@@ -1,0 +1,67 @@
+FRONT_END: 
+	Máquina do client
+BRACK_END: 
+	Máquina do Servidor
+IP:
+	Protocolo de interconexão.
+DNS:
+	Responsável pegar o endereço dos sites e traduzi-los para IP 
+HTTP:
+	A forma que o IP se comunica com o servidor.
+AJAX:
+	É a forma utilizada para atualização no client server sem a necessidade de recarregar a página fazendo com que os dados já venham pré-moldados do server.
+
+#INFORMAÇÕES SENSÍVEIS FICAM DO LADO DO BACK-END(GERALMENTE DADOS PESSOAIS E INFORMAÇÕES DE SEGURANÇA)#
+
+PÁGINA WEB: 
+	SITES ESTÁTICOS-O próprio nome já diz
+	SITES DINÂMICOS-Quando se utiliza informações de um banco para ocupar espaços pré-determinados no HTML.
+		ESQUELETO-HTML
+		PELE-CSS
+		ARTICULAÇÕES- JavaScript
+	
+UGLYFICAR:
+	Deixar o código feio para evitar cópias ou alterações.
+
+DOMÍNIO:
+	A extenção do endereço do site que vem após o nome escolhido, exemplo: .com.br, .gov.br e etc
+
+INDENTAÇÃO:
+	...
+
+BEM:
+	BLOCO(BLOCK): São elementos únicos e independes
+	ELEMENTOS(ELEMENTS): São itens que fazem parte do bloco
+	MODIFICAÇÕES(MODIFIERS): Não entendi muito bem
+
+____GIT____
+GIT:
+	Ferramenta de gerenciamento de arquivos sendo o git um sistema compartilhado central de arquivos entre pessoas com comandos. o push enviando o arquivo e o pull "puxando" o aqruivo. O git diferente dos outros trata os arquivos como um imagem. Caso a a imagem sofra alterações o git salvará como um "novo arquivo" caso não, manterá o mesmo ao contrario dos outros gerenciadores, ele também possuí o checksum, chave de verificação de integridade, assegurando que os usuários não perderão ou corromperão os arquivos em movimentação.
+
+	COMMITTED: Os dados estão armazenados de forma segura no DB;
+	MODIFIED: Alterou-se o arquivo, mas não fez o commit no DB;
+	STAGED: Marcou um arquivo para ser commitado outra hora.
+
+	Área de Trabalho -> Stage Área -> Committed
+
+	CONFIG INICIAL:
+		ADICIONAR UM USUÁRIO: git config --global user.name "Vitor Amorim" 
+		ADICIONAR UM EMAIL: git config --global user.email "asalersonvitor20@gmail.com"
+	
+	PRIMEIROS COMANDOS: 
+		COMANDO INICIAL DO GIT: git init
+		SABER O STATUS DOS ARQUIVOS: git status
+		ADICIONAR ARQUIVO(OS) EM STAGED: git add exemplo.png
+		ADICIONAR TODOS OS ARQUIVOS EM STAGED: git add .
+		CRIAR ARQUIVO: touch exemplo.txt
+		COMMIT: git commit -m "Exemplo de msg"
+		MOSTRAR AS ALTERAÇÕES: git diff
+		IGNORAR ARQUIVOS: .gitignore
+		LANDMARK: git tag -a v1.0 
+		ENVIAR O ARQUIVO DO LOCAL PARA O REMOTO: git push
+		RECEBER O ARQUIVO DO REMORO PARA O LOCAL: git pull
+
+	BRANCHES PRINCIPAIS:
+		MASTER ou MAIN: Branch padrão que está em produção
+		DEVELOP: Branch na qual se desenvolver antes de ser enviado para a branch de produção
+		SECUDÁRIAS: Branch que se está trabalhando no momento, por exemplo, algo pessoal... 
